@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping(path = "/item")
 @Api(value = "item", description = "Item Service")
@@ -26,7 +28,7 @@ public class ItemResource {
     )
     @ApiOperation(value = "Blah", response = Item.class)
     public @ResponseBody
-    Item retrieveItem(@RequestParam(value = "id", required = true) String id) {
+    List<Item> retrieveItem(@RequestParam(value = "id", required = true) String id) {
         return itemService.blah();
     }
 }

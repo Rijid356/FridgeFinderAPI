@@ -5,7 +5,8 @@ import com.example.FridgeFinder.repository.ItemRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
+
+import java.util.List;
 
 @Service
 @Slf4j
@@ -17,7 +18,7 @@ public class ItemService {
         this.itemRepository = itemRepository;
     }
 
-    public Item blah() {
-        return new Item();
+    public List<Item> blah() {
+        return this.itemRepository.findAll();
     }
 }
