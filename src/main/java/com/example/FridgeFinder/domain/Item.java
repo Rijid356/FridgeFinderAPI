@@ -10,7 +10,11 @@ import java.util.Date;
 @Data
 public class Item extends MongoDomainObject {
     private String description;
+    private Integer quantity;
+    private Integer ounces;
     private ItemType type;
     private Integer percentageLeft;
     private Date expirationDate;
+    private Boolean needsThawed;
+    private Integer thawTime;
 }

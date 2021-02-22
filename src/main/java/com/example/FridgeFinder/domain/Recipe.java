@@ -1,5 +1,6 @@
 package com.example.FridgeFinder.domain;
 
+import com.example.FridgeFinder.enums.MeatType;
 import com.example.FridgeFinder.enums.RecipeType;
 import lombok.Data;
 
@@ -13,4 +14,7 @@ public class Recipe {
     private String nutritionFacts;
     private String category;
     private RecipeType recipeType;
+    private MeatType meatType;
+    private Integer rating;
+    //private String picture;
 }

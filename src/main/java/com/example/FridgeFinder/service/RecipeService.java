@@ -18,7 +18,17 @@ public class RecipeService {
         this.recipeRepository = recipeRepository;
     }
 
+    //Find all possible recipes that can be made
     public List<Recipe> canMake() {
+        List<Recipe> allRecipes = recipeRepository.findAll();
+        for (Recipe recipe : allRecipes) {
+
+            //TODO If all Items available, can make the recipe
+            //if(recipe.getItemList()) {
+
+            //}
+        }
+
         return null;
     }
 

@@ -4,5 +4,6 @@ public enum RecipeType {
     BREAKFAST,
     LUNCH,
     DINNER,
-    DESSERT
+    DESSERT,
+    SIDE
 }

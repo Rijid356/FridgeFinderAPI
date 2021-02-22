@@ -3,7 +3,6 @@ package com.example.FridgeFinder.rest;
 import com.example.FridgeFinder.domain.Item;
 import com.example.FridgeFinder.domain.Recipe;
 import com.example.FridgeFinder.logging.RestLogger;
-import com.example.FridgeFinder.service.ItemService;
 import com.example.FridgeFinder.service.RecipeService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
