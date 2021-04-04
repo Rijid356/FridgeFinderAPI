@@ -17,4 +17,5 @@ public class Item extends MongoDomainObject {
     private Date expirationDate;
     private Boolean needsThawed;
     private Integer thawTime;
+    private Boolean isMeal;
 }
